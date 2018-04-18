@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="node_modules/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="node_modules/onsenui/css/onsen-css-components.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="node_modules/onsenui/js/onsenui.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="toolbar">
+    <div class="toolbar__left">
+    </div>
+    <div class="toolbar__center">
+        Bet League
+    </div>
+    <div class="toolbar__right">
+        <i class="fa fa-user-circle-o"></i>
+    </div>
+</div>
+<!-- tab bar top -->
+<div class="tabbar tabbar--top tabbar--top-border">
+    <label class="tabbar__item tabbar--top-border__item">
+        <input type="radio" name="top-tabbar-b" checked="checked">
+        <button class="tabbar__button tabbar--top-border__button uppercase">
+            Solo
+        </button>
+    </label>
+
+    <label class="tabbar__item tabbar--top-border__item">
+        <input type="radio" name="top-tabbar-b">
+        <button class="tabbar__button tabbar--top-border__button uppercase">
+            Pro
+        </button>
+    </label>
+
+    <label class="tabbar__item tabbar--top-border__item">
+        <input type="radio" name="top-tabbar-b">
+        <button class="tabbar__button tabbar--top-border__button uppercase">
+            Amis
+        </button>
+    </label>
+</div>
+<div class="container">
+    <section class="day-card">
+        Aujourd'hui
+        <hr>
+        <div class="event-card">
+            <div class="event-title uppercase">Coupe du monde 2018</div>
+            <ul class="list">
+                <li class="list-item list-item--longdivider ">
+                    <div class="list-item__center list-item--longdivider__center match-row">
+                        <span class="match-date">18/04</span>
+                        <span class="match-first-team">Russie</span>
+                        <span class="match-score">1 - 0</span>
+                        <span class="match-prognosis win">0 - 2</span>
+                        <span class="match-second-team">Arabie Saoudite</span>
+                    </div>
+                </li>
+                <li class="list-item list-item--longdivider">
+                    <div class="list-item__center list-item--longdivider__center match-row">
+                        <span class="match-date">18/04</span>
+                        <span class="match-first-team">Russie</span>
+                        <span class="match-score">1 - 0</span>
+                        <span class="match-prognosis lose">0 - 2</span>
+                        <span class="match-second-team">Arabie Saoudite</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="day-card">
+        Demain
+        <hr>
+        <span class="event-title uppercase">Coupe du monde 2018</span>
+    </section>
+</div>
+<!-- tab bar bottom -->
+<div class="tabbar tabbar--bottom ">
+    <label class="tabbar__item">
+        <input type="radio" name="tabbar-a" checked="checked">
+        <button class="tabbar__button">
+            <img class="icon tabbar__icon" src="assets/icons/BetLeague-app_icon_leagues.png">
+            <div class="tabbar__label uppercase">Mes ligues</div>
+        </button>
+    </label>
+
+    <label class="tabbar__item">
+        <input type="radio" name="tabbar-a">
+        <button class="tabbar__button">
+            <img class="icon tabbar__icon" src="assets/icons/BetLeague-app_icon_sitandgo.png">
+            <div class="tabbar__label uppercase">Sit & Go</div>
+        </button>
+    </label>
+
+    <label class="tabbar__item">
+        <input type="radio" name="tabbar-a">
+        <button class="tabbar__button">
+            <img class="icon tabbar__icon" src="assets/icons/BetLeague-app_icon_team.png">
+            <div class="tabbar__label uppercase">Teams</div>
+        </button>
+    </label>
+
+    <label class="tabbar__item">
+        <input type="radio" name="tabbar-a">
+        <button class="tabbar__button">
+            <img class="icon tabbar__icon" src="assets/icons/BetLeague-app_icon_podium.png">
+            <div class="tabbar__label uppercase">Podium</div>
+        </button>
+    </label>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

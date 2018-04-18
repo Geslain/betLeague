@@ -1,0 +1,106 @@
+$first: #022740;
+$second: #022740;
+$third: #171766;
+
+body {
+  background-color: #0C0B3F;
+  color: white;
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.container {
+  padding: 40px;
+
+  .event-card {
+    display: block;
+    margin-bottom: 30px;
+    .event-title {
+      margin: 5px 0;
+    }
+
+    .list-item{
+      padding: 0;
+    }
+
+    .match-row {
+      color: white;
+      padding: 5px;
+      font-size: 12px;
+      display: flex;
+
+      & > span {
+        display: flex;
+        flex-flow: row nowrap;
+        flex-grow: 1;
+        text-align: center;
+      }
+      &:nth-child(n) {
+        background-color: $first;
+      }
+
+      &:nth-child(2n + 1) {
+        background-color: $second;
+      }
+
+      .match-date {
+
+      }
+      .match-first-team {
+
+      }
+      .match-score {
+
+      }
+      .match-prognosis {
+        &.win{
+          background-color: #91F0FF;
+        }
+
+        &.lose{
+          background-color: #FF8358;
+        }
+      }
+      .match-second-team {
+
+      }
+    }
+  }
+}
+
+.toolbar div {
+  background-color: $first;
+  color: white;
+
+  .fa-user-circle-o {
+    margin-right: 14px;
+    font-size: 30px;
+    margin-top: 7px;
+  }
+}
+
+.tabbar {
+  .icon {
+    margin: 5px auto;
+  }
+
+  &.tabbar--top {
+    background-color: $second;
+    .tabbar__button {
+      :active {
+        border: 1px solid white;
+      }
+      color: white
+    }
+  }
+  &.tabbar--bottom {
+    height: 60px;
+    background-color: #171766;
+    .tabbar__button {
+      height: 60px;
+    }
+  }
+}
+
